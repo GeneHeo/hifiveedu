@@ -520,3 +520,62 @@ body.admissions-body {
   color: #004aad;
   text-decoration: underline;
 }
+
+/* Mobile compatibility for all pages */
+@media (max-width: 600px) {
+  body, html {
+    font-size: 15px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 4px;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5em;
+  }
+  .navbar-menu a, .navbar-menu select {
+    width: 100%;
+    margin: 4px 0;
+    font-size: 1em;
+  }
+  .container, .board, .plans, .plan, .support-container, main, .payment-options, .consulting-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 4px;
+    font-size: 1em;
+  }
+  .plan {
+    margin-bottom: 1em;
+    width: 100% !important;
+  }
+  .payment-options button {
+    width: 100%;
+    font-size: 1em;
+  }
+  .embed-frame {
+    width: 100vw !important;
+    height: 60vw !important;
+    min-height: 200px;
+  }
+  .faq-question {
+    font-size: 1em;
+  }
+  .faq-answer {
+    font-size: 0.95em;
+  }
+}
