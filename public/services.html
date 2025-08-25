@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title><span class="lang-ko">상품 소개</span><span class="lang-en" style="display:none;">Product Plans</span> / Product Plans</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<style>
+    h2, h3 { text-align: center; }
+    .plans {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin-top: 2em;
+      flex-wrap: wrap;
+    }
+    .plan {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5em;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      width: 280px;
+    }
+    .plan h4 {
+      font-size: 1.2em;
+      border-bottom: 2px solid #004aad;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+    .plan ul li::before {
+      content: '✔️';
+      margin-right: 0.5em;
+    }
+    .purchase-button {
+      display: block;
+      margin: 1.5em auto 0;
+      padding: 0.6em 1.5em;
+      background: #004aad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+<body>
+  <nav class="navbar glass">
+    <div class="navbar-left">
+      <a href="index.html"><img alt="Logo" class="logo-img" src="logo.jpg"/></a>
+    </div>
+    <div class="navbar-menu">
+      <a href="services.html" id="menu-purchase">Purchase</a>
+      <a href="student_manage.html" id="menu-student-manage">Student Manage</a>
+      <a href="support.html" id="menu-support">Support</a>
+      <a href="consulting.html" id="menu-consulting">Consulting</a>
+      <a href="admissions.html" id="menu-admission">Admission</a>
+      <select id="lang-toggle">
+        <option value="en">EN</option>
+        <option value="ko">KR</option>
+      </select>
+    </div>
+  </nav>
+
+<h3><span class="lang-ko">학생의 학년에 따라 다른 서비스</span><span class="lang-en" style="display:none;">Services Based on Student Level</span></h3>
+<div class="plans">
+<div class="plan">
+<h4>초등학생 맞춤 상품</h4>
+<ul>
+<li>기초 학습 분석</li>
+<li>학부모 커뮤니케이션 리포트</li>
+<li>도서 추천 및 읽기 습관 분석</li>
+</ul>
+<a class="purchase-button" href="purchase.html">구매하기</a>
+</div>
+<div class="plan">
+<h4>중학생 맞춤 상품</h4>
+<ul>
+<li>과목별 집중 분석</li>
+<li>AI 기반 학습전략 리포트</li>
+<li>상담 기록 자동 저장 및 관리</li>
+</ul>
+<a class="purchase-button" href="purchase.html">구매하기</a>
+</div>
+<div class="plan">
+<h4>고등학생 맞춤 상품</h4>
+<ul>
+<li>내신 + 수능 연계 전략 분석</li>
+<li>자기소개서 피드백</li>
+<li>입시 맞춤 자료 제공</li>
+</ul>
+<a class="purchase-button" href="purchase.html">구매하기</a>
+</div>
+</div>
+<script>
+function setHeroLang() {
+document.getElementById('hero-title').textContent = currentLang === 'ko' ? '상품 소개' : 'Product Plans';
+document.getElementById('hero-desc').textContent = currentLang === 'ko' ? '학생에게 맞는 상품을 선택하세요' : 'Choose the Right Plan for Your Student';
+}
+function setPlaceholders() {
+document.querySelectorAll('[placeholder="학생의 학년에 따라 다른 서비스"]').forEach(el=>el.placeholder = currentLang==='ko'?'학생의 학년에 따라 다른 서비스':'Services Based on Student Level');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='학생의 학년에 따라 다른 서비스'||el.textContent.trim()==='Services Based on Student Level')el.textContent=currentLang==='ko'?'학생의 학년에 따라 다른 서비스':'Services Based on Student Level';});
+document.querySelectorAll('[placeholder="초등학생 맞춤 상품"]').forEach(el=>el.placeholder = currentLang==='ko'?'초등학생 맞춤 상품':'Elementary School Plan');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='초등학생 맞춤 상품'||el.textContent.trim()==='Elementary School Plan')el.textContent=currentLang==='ko'?'초등학생 맞춤 상품':'Elementary School Plan';});
+document.querySelectorAll('[placeholder="기초 학습 분석"]').forEach(el=>el.placeholder = currentLang==='ko'?'기초 학습 분석':'Basic Learning Analysis');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='기초 학습 분석'||el.textContent.trim()==='Basic Learning Analysis')el.textContent=currentLang==='ko'?'기초 학습 분석':'Basic Learning Analysis';});
+document.querySelectorAll('[placeholder="학부모 커뮤니케이션 리포트"]').forEach(el=>el.placeholder = currentLang==='ko'?'학부모 커뮤니케이션 리포트':'Parent Communication Report');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='학부모 커뮤니케이션 리포트'||el.textContent.trim()==='Parent Communication Report')el.textContent=currentLang==='ko'?'학부모 커뮤니케이션 리포트':'Parent Communication Report';});
+document.querySelectorAll('[placeholder="도서 추천 및 읽기 습관 분석"]').forEach(el=>el.placeholder = currentLang==='ko'?'도서 추천 및 읽기 습관 분석':'Book Recommendation & Reading Analysis');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='도서 추천 및 읽기 습관 분석'||el.textContent.trim()==='Book Recommendation & Reading Analysis')el.textContent=currentLang==='ko'?'도서 추천 및 읽기 습관 분석':'Book Recommendation & Reading Analysis';});
+document.querySelectorAll('[placeholder="구매하기"]').forEach(el=>el.placeholder = currentLang==='ko'?'구매하기':'Purchase');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='구매하기'||el.textContent.trim()==='Purchase')el.textContent=currentLang==='ko'?'구매하기':'Purchase';});
+document.querySelectorAll('[placeholder="중학생 맞춤 상품"]').forEach(el=>el.placeholder = currentLang==='ko'?'중학생 맞춤 상품':'Middle School Plan');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='중학생 맞춤 상품'||el.textContent.trim()==='Middle School Plan')el.textContent=currentLang==='ko'?'중학생 맞춤 상품':'Middle School Plan';});
+document.querySelectorAll('[placeholder="과목별 집중 분석"]').forEach(el=>el.placeholder = currentLang==='ko'?'과목별 집중 분석':'Subject Analysis');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='과목별 집중 분석'||el.textContent.trim()==='Subject Analysis')el.textContent=currentLang==='ko'?'과목별 집중 분석':'Subject Analysis';});
+document.querySelectorAll('[placeholder="AI 기반 학습전략 리포트"]').forEach(el=>el.placeholder = currentLang==='ko'?'AI 기반 학습전략 리포트':'AI-based Learning Strategy Report');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='AI 기반 학습전략 리포트'||el.textContent.trim()==='AI-based Learning Strategy Report')el.textContent=currentLang==='ko'?'AI 기반 학습전략 리포트':'AI-based Learning Strategy Report';});
+document.querySelectorAll('[placeholder="상담 기록 자동 저장 및 관리"]').forEach(el=>el.placeholder = currentLang==='ko'?'상담 기록 자동 저장 및 관리':'Auto-save & Manage Consulting Records');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='상담 기록 자동 저장 및 관리'||el.textContent.trim()==='Auto-save & Manage Consulting Records')el.textContent=currentLang==='ko'?'상담 기록 자동 저장 및 관리':'Auto-save & Manage Consulting Records';});
+document.querySelectorAll('[placeholder="고등학생 맞춤 상품"]').forEach(el=>el.placeholder = currentLang==='ko'?'고등학생 맞춤 상품':'High School Plan');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='고등학생 맞춤 상품'||el.textContent.trim()==='High School Plan')el.textContent=currentLang==='ko'?'고등학생 맞춤 상품':'High School Plan';});
+document.querySelectorAll('[placeholder="내신 + 수능 연계 전략 분석"]').forEach(el=>el.placeholder = currentLang==='ko'?'내신 + 수능 연계 전략 분석':'School Grades + CSAT Strategy');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='내신 + 수능 연계 전략 분석'||el.textContent.trim()==='School Grades + CSAT Strategy')el.textContent=currentLang==='ko'?'내신 + 수능 연계 전략 분석':'School Grades + CSAT Strategy';});
+document.querySelectorAll('[placeholder="자기소개서 피드백"]').forEach(el=>el.placeholder = currentLang==='ko'?'자기소개서 피드백':'Self-Introduction Feedback');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='자기소개서 피드백'||el.textContent.trim()==='Self-Introduction Feedback')el.textContent=currentLang==='ko'?'자기소개서 피드백':'Self-Introduction Feedback';});
+document.querySelectorAll('[placeholder="입시 맞춤 자료 제공"]').forEach(el=>el.placeholder = currentLang==='ko'?'입시 맞춤 자료 제공':'Tailored Admissions Materials');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='입시 맞춤 자료 제공'||el.textContent.trim()==='Tailored Admissions Materials')el.textContent=currentLang==='ko'?'입시 맞춤 자료 제공':'Tailored Admissions Materials';});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign In / 회원가입</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+    .container {
+      background: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #google-btn {
+      margin-top: 20px;
+      background: #db4437;
+    }
+  </style></head>
+<body>
+<nav class="navbar glass">
+<div class="navbar-left">
+<a href="index.html"><img alt="Logo" class="logo-img" src="logo.jpg"/></a>
+</div>
+<div class="navbar-menu">
+<a href="purchase.html" id="menu-purchase">Purchase</a>
+<a href="services.html" id="menu-student-manage">Student Manage</a>
+<a href="support.html" id="menu-support">Support</a>
+<a href="consulting.html" id="menu-consulting">Consulting</a>
+<a href="admissions.html" id="menu-admission">Admission</a>
+<select id="lang-toggle">
+<option value="en">EN</option>
+<option value="ko">KR</option>
+</select>
+</div>
+</nav>
+<div class="container">
+<h2 id="hero-title">Sign In / 회원가입</h2><p id="hero-desc"></p>
+<form id="signinForm">
+<input id="name" placeholder="이름 / Name" required="" type="text"/>
+<input id="email" placeholder="이메일 / Email" required="" type="email"/>
+<input id="birthday" placeholder="생년월일" required="" type="date"/>
+<input id="school" placeholder="학교명" required="" type="text"/>
+<input id="grade" placeholder="학년" required="" type="number"/>
+<label for="pdfUpload">적성검사 PDF 업로드:</label>
+<input accept="application/pdf" id="pdfUpload" required="" type="file"/>
+<button type="submit">제출하기</button>
+<button id="google-btn" type="button">Sign in with Google</button>
+</form>
+</div>
+<script>
+function setHeroLang() {
+document.getElementById('hero-title').textContent = currentLang === 'ko' ? 'Sign In / 회원가입' : 'Sign In / Sign Up';
+document.getElementById('hero-desc').textContent = currentLang === 'ko' ? '다시 오신 것을 환영합니다! 로그인 해주세요.' : 'Welcome back! Please sign in.';
+}
+function setPlaceholders() {
+document.querySelectorAll('[placeholder="이름 / Name"]').forEach(el=>el.placeholder = currentLang==='ko'?'이름 / Name':'Name');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='이름 / Name'||el.textContent.trim()==='Name')el.textContent=currentLang==='ko'?'이름 / Name':'Name';});
+document.querySelectorAll('[placeholder="이메일 / Email"]').forEach(el=>el.placeholder = currentLang==='ko'?'이메일 / Email':'Email');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='이메일 / Email'||el.textContent.trim()==='Email')el.textContent=currentLang==='ko'?'이메일 / Email':'Email';});
+document.querySelectorAll('[placeholder="생년월일"]').forEach(el=>el.placeholder = currentLang==='ko'?'생년월일':'Date of Birth');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='생년월일'||el.textContent.trim()==='Date of Birth')el.textContent=currentLang==='ko'?'생년월일':'Date of Birth';});
+document.querySelectorAll('[placeholder="학교명"]').forEach(el=>el.placeholder = currentLang==='ko'?'학교명':'School');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='학교명'||el.textContent.trim()==='School')el.textContent=currentLang==='ko'?'학교명':'School';});
+document.querySelectorAll('[placeholder="학년"]').forEach(el=>el.placeholder = currentLang==='ko'?'학년':'Grade');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='학년'||el.textContent.trim()==='Grade')el.textContent=currentLang==='ko'?'학년':'Grade';});
+document.querySelectorAll('[placeholder="적성검사 PDF 업로드:"]').forEach(el=>el.placeholder = currentLang==='ko'?'적성검사 PDF 업로드:':'Aptitude Test PDF Upload:');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='적성검사 PDF 업로드:'||el.textContent.trim()==='Aptitude Test PDF Upload:')el.textContent=currentLang==='ko'?'적성검사 PDF 업로드:':'Aptitude Test PDF Upload:';});
+document.querySelectorAll('[placeholder="제출하기"]').forEach(el=>el.placeholder = currentLang==='ko'?'제출하기':'Submit');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='제출하기'||el.textContent.trim()==='Submit')el.textContent=currentLang==='ko'?'제출하기':'Submit';});
+document.querySelectorAll('[placeholder="Sign in with Google"]').forEach(el=>el.placeholder = currentLang==='ko'?'Sign in with Google':'Sign in with Google');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='Sign in with Google'||el.textContent.trim()==='Sign in with Google')el.textContent=currentLang==='ko'?'Sign in with Google':'Sign in with Google';});
+}
+</script>
+<script src="app.js"></script></body>
+</html>

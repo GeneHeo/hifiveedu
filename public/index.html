@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Book Recommendation</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar glass">
+  <div class="navbar-left">
+    <a href="index.html"><img alt="Logo" class="logo-img" src="logo.jpg"/></a>
+  </div>
+  <div class="navbar-menu">
+    <a href="services.html" id="menu-purchase">Purchase</a>
+    <a href="student_manage.html" id="menu-student-manage">Student Manage</a>
+    <a href="support.html" id="menu-support">Support</a>
+    <a href="consulting.html" id="menu-consulting">Consulting</a>
+    <a href="admissions.html" id="menu-admission">Admission</a>
+    <select id="lang-toggle">
+      <option value="en">EN</option>
+      <option value="ko">KR</option>
+    </select>
+  </div>
+</nav>
+<main>
+  <section class="hero glass">
+    <h1 id="hero-title">Book Recommendation</h1>
+    <p id="hero-desc">학년이나 읽은 책 제목을 입력하거나, 입력 없이 추천 버튼만 눌러보세요.예시 - 초등학교 1학년</p>
+    <div style="margin:24px 0 8px 0;">
+      <input id="book1" placeholder="읽은 책 제목, 혹은 학년 (입력 없으면 무작위 추천)" style="width:320px; padding:8px;">
+      <button class="btn-gradient" onclick="recommendBook()" style="padding:7px 18px; margin-left:6px;">추천</button>
+    </div>
+    <div id="result" style="margin-top:18px; font-size:1.16em; font-weight:bold; color:#115;"></div>
+  </section>
+  <section class="grid-section" id="recommend-section"></section>
+</main>
+<footer class="footer glass">
+  <span>© 2025 Hi-Five. All rights reserved.</span>
+</footer>
+<!-- 자동 추천 맵핑 js 파일 연결 -->
+<script src="books_authors.js"></script>
+<script src="book_recommendations_full.js"></script>
+<script src="grade_school_data.js"></script> <!-- NEW: The data file -->
+<script src="grade_school_recommender.js"></script> <!-- NEW: The logic file -->
+<script>
+function recommendBook() {
+    const input = document.getElementById("book1").value.trim();
+    const resultDiv = document.getElementById("result");
+
+    // --- 1. Try the new School/Grade recommender FIRST (now synchronous) ---
+    const gradeSchoolResult = recommendByGradeAndSchool(input);
+
+    if (gradeSchoolResult) {
+        // If it returned a result (even an error message), display it and stop.
+        if (gradeSchoolResult.error) {
+            resultDiv.innerHTML = gradeSchoolResult.error;
+        } else {
+            resultDiv.innerHTML = `✅ <b>${gradeSchoolResult.title}</b> — <i>${gradeSchoolResult.author}</i> (${gradeSchoolResult.source})`;
+        }
+        return; // IMPORTANT: Stop here.
+    }
+
+    // --- 2. If the new recommender did nothing, run YOUR ORIGINAL, WORKING code ---
+
+    // If input is empty, use randomCandidates for random recommendation
+    if (!input) {
+        if (typeof randomCandidates === "undefined" || randomCandidates.length === 0) {
+            resultDiv.innerHTML = "추천 후보가 없습니다.";
+            return;
+        }
+        let pick = randomCandidates[Math.floor(Math.random() * randomCandidates.length)];
+        let pickAuthor = booksAuthors[pick] || "저자 정보 없음";
+        resultDiv.innerHTML = `✅ <b>${pick}</b> — <i>${pickAuthor}</i> (무작위 추천)`;
+        return;
+    }
+
+    // Title/author-based recommendation using your existing data
+    if (typeof bookRecommendations !== 'undefined' && bookRecommendations[input]) {
+        let recTitle = bookRecommendations[input];
+        let recAuthor = booksAuthors[recTitle] || "저자 정보 없음";
+        resultDiv.innerHTML = `✅ <b>${recTitle}</b> — <i>${recAuthor}</i> (AI 추천)`;
+        return;
+    }
+  
+    // Partial match search using your existing data
+    if (typeof booksAuthors !== 'undefined') {
+        let matches = Object.keys(booksAuthors).filter(
+            title => title.includes(input) || booksAuthors[title].includes(input)
+        );
+        if (matches.length > 0) {
+            let pick = matches[Math.floor(Math.random() * matches.length)];
+            resultDiv.innerHTML = `✅ <b>${pick}</b> — <i>${booksAuthors[pick]}</i> (검색 추천)`;
+            return;
+        }
+    }
+
+    resultDiv.innerHTML = "검색 결과가 없습니다.";
+}
+</script>
+</body>
+</html>

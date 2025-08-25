@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>컨설팅 문의</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+.consulting-contact-notice {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 1.1em;
+  color: #004aad;
+  font-weight: bold;
+}
+</style>
+</head>
+<body class="consulting-body">
+  <nav class="navbar glass">
+    <div class="navbar-left">
+      <a href="index.html"><img alt="Logo" class="logo-img" src="logo.jpg"/></a>
+    </div>
+    <div class="navbar-menu">
+      <a href="services.html" id="menu-purchase">Purchase</a>
+      <a href="student_manage.html" id="menu-student-manage">Student Manage</a>
+      <a href="support.html" id="menu-support">Support</a>
+      <a href="consulting.html" id="menu-consulting">Consulting</a>
+      <a href="admissions.html" id="menu-admission">Admission</a>
+      <select id="lang-toggle">
+        <option value="en">EN</option>
+        <option value="ko">KR</option>
+      </select>
+    </div>
+  </nav>
+
+  <main>
+    <form class="consulting-form" id="consultingForm" onsubmit="sendSMS(event)">
+      <input id="smsName" placeholder="이름 / Name" required type="text"/>
+      <input id="smsPhoneNumber" placeholder="전화번호 / Phone Number" required type="tel"/>
+      <select id="smsType">
+        <option value="">문의 유형 선택</option>
+        <option value="기본 상담">기본 상담</option>
+        <option value="학습 전략">학습 전략</option>
+        <option value="입시">입시</option>
+      </select>
+      <textarea id="smsMsg" placeholder="문의 내용을 입력하세요..." required rows="6"></textarea>
+      <button type="submit">SMS로 문의 보내기</button>
+    </form>
+    <div class="consulting-contact-notice">
+      01062507679로 문의주세요
+    </div>
+  </main>
+<script>
+function setHeroLang() {
+document.getElementById('hero-title').textContent = currentLang === 'ko' ? '컨설팅 문의' : 'Consulting Inquiry';
+document.getElementById('hero-desc').textContent = currentLang === 'ko' ? '궁금한 사항을 남겨주세요!' : 'Let us know how we can help!';
+}
+function setPlaceholders() {
+document.querySelectorAll('[placeholder="이름 / Name"]').forEach(el=>el.placeholder = currentLang==='ko'?'이름':'Name');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='이름 / Name'||el.textContent.trim()==='Name')el.textContent=currentLang==='ko'?'이름':'Name';});
+document.querySelectorAll('[placeholder="전화번호 / Phone Number"]').forEach(el=>el.placeholder = currentLang==='ko'?'전화번호':'Phone Number');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='전화번호 / Phone Number'||el.textContent.trim()==='Phone Number')el.textContent=currentLang==='ko'?'전화번호':'Phone Number';});
+document.querySelectorAll('[placeholder="문의 유형 선택"]').forEach(el=>el.placeholder = currentLang==='ko'?'문의 유형 선택':'Select Inquiry Type');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='문의 유형 선택'||el.textContent.trim()==='Select Inquiry Type')el.textContent=currentLang==='ko'?'문의 유형 선택':'Select Inquiry Type';});
+document.querySelectorAll('[placeholder="기본 상담"]').forEach(el=>el.placeholder = currentLang==='ko'?'기본 상담':'Basic Consulting');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='기본 상담'||el.textContent.trim()==='Basic Consulting')el.textContent=currentLang==='ko'?'기본 상담':'Basic Consulting';});
+document.querySelectorAll('[placeholder="학습 전략"]').forEach(el=>el.placeholder = currentLang==='ko'?'학습 전략':'Learning Strategy');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='학습 전략'||el.textContent.trim()==='Learning Strategy')el.textContent=currentLang==='ko'?'학습 전략':'Learning Strategy';});
+document.querySelectorAll('[placeholder="입시"]').forEach(el=>el.placeholder = currentLang==='ko'?'입시':'Admissions');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='입시'||el.textContent.trim()==='Admissions')el.textContent=currentLang==='ko'?'입시':'Admissions';});
+document.querySelectorAll('[placeholder="문의 내용을 입력하세요..."]').forEach(el=>el.placeholder = currentLang==='ko'?'문의 내용을 입력하세요...':'Enter your inquiry...');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='문의 내용을 입력하세요...'||el.textContent.trim()==='Enter your inquiry...')el.textContent=currentLang==='ko'?'문의 내용을 입력하세요...':'Enter your inquiry...';});
+document.querySelectorAll('[placeholder="문의 보내기"]').forEach(el=>el.placeholder = currentLang==='ko'?'문의 보내기':'Send Inquiry');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='문의 보내기'||el.textContent.trim()==='Send Inquiry')el.textContent=currentLang==='ko'?'문의 보내기':'Send Inquiry';});
+document.querySelectorAll('[placeholder="관리자만 볼 수 있는 비밀글로 설정"]').forEach(el=>el.placeholder = currentLang==='ko'?'관리자만 볼 수 있는 비밀글로 설정':'Make this private (admins only)');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='관리자만 볼 수 있는 비밀글로 설정'||el.textContent.trim()==='Make this private (admins only)')el.textContent=currentLang==='ko'?'관리자만 볼 수 있는 비밀글로 설정':'Make this private (admins only)';});
+}
+function sendSMS(e) {
+  e.preventDefault();
+  const name = document.getElementById('smsName').value;
+  const email = document.getElementById('smsEmail').value;
+  const phone = document.getElementById('smsPhoneNumber').value;
+  const type = document.getElementById('smsType').value;
+  const msg = document.getElementById('smsMsg').value;
+  const secret = document.getElementById('smsSecret').checked ? '비밀글' : '';
+  const body = encodeURIComponent(
+    `[컨설팅 문의]\n이름: ${name}\n전화번호: ${phone}\n유형: ${type}\n내용: ${msg}`
+  );
+  window.location.href = `sms:01062507679?body=${body}`;
+}
+</script>
+</body>
+</html>

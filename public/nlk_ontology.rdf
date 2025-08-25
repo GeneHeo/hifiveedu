@@ -1,0 +1,2805 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:bf="http://bibframe.org/vocab/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:nlon="http://lod.nl.go.kr/ontology/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:nlk="http://lod.nl.go.kr/resource/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://lod.nl.go.kr/ontology/" > 
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/electronicJournal">
+    <rdfs:label xml:lang="ko">전자저널</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic journal</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfSupplementParent">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">모체레코드저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of supplement parent</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:unionOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:unionOf rdf:nodeID="A3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Library">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label xml:lang="ko">도서관</rdfs:label>
+    <rdfs:label xml:lang="en">Library</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_a">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</rdfs:label>
+    <rdfs:label xml:lang="ko">연간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://listinc.kr/id/member/wonseok.oh">
+    <foaf:name xml:lang="en">Wonseok Oh</foaf:name>
+    <foaf:mbox rdf:resource="mailto:wonseok.oh@listinc.kr"/>
+    <foaf:mbox rdf:resource="mailto:wonseok.oh@li-st.com"/>
+    <foaf:name xml:lang="ko">오원석</foaf:name>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/webSite">
+    <rdfs:label xml:lang="ko">웹사이트</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">web site</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/relatedPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">관련 인물</rdfs:label>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/Author"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">related person</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:rest rdf:nodeID="A11"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_b">
+    <rdfs:label xml:lang="ko">격월간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/genre">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">장르</rdfs:label>
+    <rdfs:label xml:lang="en">genre</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <owl:unionOf rdf:nodeID="A13"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <owl:unionOf rdf:nodeID="A4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfCurrentPublicationFrequency">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="ko">현재 간행빈도 시작 연월</rdfs:label>
+    <rdfs:label xml:lang="en">date of current publication frequency</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:comment xml:lang="ko">자원의 간행빈도가 창간호의 간행빈도와 같지 않을 경우 현재의 간행빈도를 사용한 시작 연월</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:unionOf rdf:nodeID="A10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:unionOf rdf:nodeID="A18"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/gprn">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">한국정부간행물 발간등록번호(GPRN: Government Publications Registration Number)를 기술한다. 마이크로필름인 경우에는 GPRN 자료번호 뒤에 "MF"를 원 괄호에 넣어 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">한국정부간행물 발간등록번호</rdfs:label>
+    <rdfs:label xml:lang="en">gprn</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A20"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_c">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c</rdfs:label>
+    <rdfs:label xml:lang="ko">주2회간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Author">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:label xml:lang="ko">저자</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/keyword">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">키워드</rdfs:label>
+    <rdfs:label xml:lang="en">keyword</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <owl:unionOf rdf:nodeID="A22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_jm">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jm</rdfs:label>
+    <rdfs:label xml:lang="ko">아동잡지</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/languageNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">해당자료에 사용된 언어에 관한 사항을 문장으로 기술한다. 이 필드는 또한 해당자료에 기재된 알파벳, 문자 또는 다른 기호 체계를 기술하는 데 사용한다. 언어부호(부호)는 008/35-37(언어)과 041(언어부호) 필드에 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">언어주기</rdfs:label>
+    <rdfs:label xml:lang="en">language note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A23"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/hasIssue">
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+    <rdfs:label xml:lang="en">has issue</rdfs:label>
+    <rdfs:label xml:lang="ko">발행물</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <owl:unionOf rdf:nodeID="A25"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <owl:unionOf rdf:nodeID="A26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfPublicationStatus">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">type of publication status</rdfs:label>
+    <rdfs:label xml:lang="ko">간행상태유형</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <owl:unionOf rdf:nodeID="A28"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    <owl:allValuesFrom rdf:nodeID="A17"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/biographicalNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">biographical note</rdfs:label>
+    <rdfs:domain rdf:nodeID="A30"/>
+    <rdfs:label xml:lang="ko">전기 또는 역사 관련 주기</rdfs:label>
+    <rdfs:comment xml:lang="ko">자원의 저작자의 전기 정보와 단체, 사건에 대한 역사적 정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/personalName">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="ko">인명</rdfs:label>
+    <rdfs:label xml:lang="en">personal name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_d">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d</rdfs:label>
+    <rdfs:label xml:lang="ko">일간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Government">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label xml:lang="en">Government</rdfs:label>
+    <rdfs:label xml:lang="ko">정부기관</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/openingYear">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">opening year</rdfs:label>
+    <rdfs:label xml:lang="ko">개관연도</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfSubSeries">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">하위총서표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of sub series</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <owl:unionOf rdf:nodeID="A35"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <owl:unionOf rdf:nodeID="A37"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/disabledAlternativeMaterial">
+    <rdfs:label xml:lang="ko">장애인 대체 자료</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disabled alternative material</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/fieldOfActivity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">활동분야</rdfs:label>
+    <rdfs:label xml:lang="en">field of activity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/linkingEntryComplexityNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">해당자료와 관련 있는 서명 및 관련 있는 기술사항을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">연관저록 설명 주기</rdfs:label>
+    <rdfs:label xml:lang="en">linking entry complexity note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A16"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/confirmedBy">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">confirmed by</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/managedBy"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/associatedLanguage">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">associated language</rdfs:label>
+    <rdfs:label xml:lang="ko">관련 언어</rdfs:label>
+    <rdfs:comment xml:lang="ko">자원과 관련된 개인(사람)이 사용하는 언어</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:rest rdf:nodeID="A42"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/itemNumberOfNLK">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">국립중앙도서관 청구기호상의 도서기호를 기술한다. 적용 도서기호는 국립중앙도서관 동양서 저자기호표, 카터-샌본저자기호표(Cutter-Sanborn Three-Author Table), 수입순기호 등이 있다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">국립중앙도서관 청구기호 도서기호</rdfs:label>
+    <rdfs:label xml:lang="en">item number of NLK</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/itemNumber"/>
+    <rdfs:domain rdf:nodeID="A34"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:rest rdf:nodeID="A38"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/hasSupplement">
+    <rdfs:label xml:lang="en">has supplement</rdfs:label>
+    <rdfs:label xml:lang="ko">보유판 및 특별호저록</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <owl:inverseOf rdf:resource="http://lod.nl.go.kr/ontology/supplementTo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:nodeID="A45"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/contain">
+    <rdfs:label xml:lang="ko">수록하다.</rdfs:label>
+    <rdfs:label xml:lang="en">contain</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Book">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/OfflineMaterial"/>
+    <rdfs:label xml:lang="en">Book</rdfs:label>
+    <rdfs:label xml:lang="ko">도서</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfDistribute">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">배포년</rdfs:comment>
+    <rdfs:label xml:lang="en">date of distribute</rdfs:label>
+    <rdfs:label xml:lang="ko">배포년</rdfs:label>
+    <rdfs:domain rdf:nodeID="A24"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_np">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">np</rdfs:label>
+    <rdfs:label xml:lang="ko">신문</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:rest rdf:nodeID="A48"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <rdf:rest rdf:nodeID="A32"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <owl:unionOf rdf:nodeID="A44"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <rdf:rest rdf:nodeID="A52"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <rdf:rest rdf:nodeID="A46"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/classificationNumberOfLC">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">미국 의회도서관 청구기호 분류기호</rdfs:label>
+    <rdfs:domain rdf:nodeID="A55"/>
+    <rdfs:label xml:lang="en">Library of Congress Call Number - Classification Number</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/classificationNumber"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원에 부여된 미국의회도서관 청구기호 상의 분류기호</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft__">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_</rdfs:label>
+    <rdfs:label xml:lang="ko">부정기간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ComplexDocument">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label xml:lang="ko">복합자료</rdfs:label>
+    <rdfs:label xml:lang="en">Complex document</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfOriginalLanguage">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">원저표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of original language</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/sound">
+    <rdfs:label xml:lang="ko">사운드</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sound</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/image">
+    <rdfs:label xml:lang="ko">이미지</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <owl:unionOf rdf:nodeID="A49"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_ha">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ha</rdfs:label>
+    <rdfs:label xml:lang="ko">교과서</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <owl:unionOf rdf:nodeID="A51"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <owl:unionOf rdf:nodeID="A47"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/isni">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:comment xml:lang="ko">국제표준이름식별자</rdfs:comment>
+    <rdfs:comment xml:lang="en">International Standard Name Identifier</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">ISNI</rdfs:label>
+    <rdfs:label xml:lang="en">ISNI</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/provincialLevel">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">provincial level</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Location"/>
+    <rdfs:label xml:lang="ko">광역시도 레벨</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <owl:unionOf rdf:nodeID="A61"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/OnlineMaterial">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">Online material</rdfs:label>
+    <rdfs:label xml:lang="ko">온라인 자료</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/municipalLevel">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">municipal level</rdfs:label>
+    <rdfs:label xml:lang="ko">시군구 레벨</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/corporateName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">단체명</rdfs:label>
+    <rdfs:label xml:lang="en">corporate name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/inputDate">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">입력 날짜</rdfs:label>
+    <rdfs:label xml:lang="en">input date</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ContinuousDataType">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/Classification"/>
+    <rdfs:label xml:lang="en">Continuous data type</rdfs:label>
+    <rdfs:label xml:lang="ko">연속자료구분</rdfs:label>
+    <rdfs:comment xml:lang="ko">연속간행물에서 사용하는 연속자료 구분 부가정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_i">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i</rdfs:label>
+    <rdfs:label xml:lang="ko">주3회간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_rb">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb</rdfs:label>
+    <rdfs:label xml:lang="ko">고서</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/scholarlyJournal">
+    <rdfs:label xml:lang="ko">학술지</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scholarly journal</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/subseriesEntryHeading">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾a는 관련 레코드 100(기본표목-개인명) 필드, 110(기본표목-단체명) 필드, 111(기본표목-회의명) 필드의 기본표목 데이터를 포함한다. 하지만 식별기호에서는 1XX 필드에서 사용하는 개별적인 이름의 요소나 통일표제는 기술되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">하위총서저록 기본표목</rdfs:label>
+    <rdfs:label xml:lang="en">subseries entry heading</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/otherNumber">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">제1지시기호에 정의된 분류기호를 기술한다. 복수주제를 다룬 자료로서 분류기호가 2개 이상 부여되는 경우에는 식별기호 ▾a를 반복하여 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">기타 분류기호</rdfs:label>
+    <rdfs:label xml:lang="en">Other Classification Number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_gm">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gm</rdfs:label>
+    <rdfs:label xml:lang="ko">일반자료</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_j">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">j</rdfs:label>
+    <rdfs:label xml:lang="ko">월3회간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/OnlineMaterialType">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">Online material type</rdfs:label>
+    <rdfs:label xml:lang="ko">온라인자료 유형</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/Classification"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/reproductionDate">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">복제물이 만들어진 일자를 기술한다. 연속간행물일 경우 시작일과 종료일을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">복제일자</rdfs:label>
+    <rdfs:label xml:lang="en">reproduction date</rdfs:label>
+    <rdfs:domain rdf:nodeID="A65"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/reproductionNote"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/degreeYear">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label xml:lang="ko">학위수여연도</rdfs:label>
+    <rdfs:label xml:lang="en">degree year</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+    <rdfs:comment xml:lang="ko">개인(사람)의 학위 수여연도</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <rdf:rest rdf:nodeID="A63"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/isSubjectOf">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">is subject of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <rdf:rest rdf:nodeID="A68"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/scale">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">축척이나 그에 상당하는 축척내용을 기술한다. 수직축척이나 지형모형 또는 다른 삼차원자료의 수직확장표시도 이 식별기호에 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">축척</rdfs:label>
+    <rdfs:label xml:lang="en">scale</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:rest rdf:nodeID="A62"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfConstituentUnit">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">구성단위저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of constituent unit</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_k">
+    <rdfs:label xml:lang="ko">테스트</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfOpening">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">date of opening</rdfs:label>
+    <rdfs:label xml:lang="ko">개관일</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/subSeries">
+    <owl:inverseOf rdf:resource="http://lod.nl.go.kr/ontology/mainSeries"/>
+    <rdfs:label xml:lang="en">sub series</rdfs:label>
+    <rdfs:label xml:lang="ko">하위총서</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:comment xml:lang="ko">자원이 상위총서(수직적 관계)일 때 하위총서저록에 관한 정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/preceding">
+    <rdfs:label xml:lang="en">preceding</rdfs:label>
+    <rdfs:label xml:lang="ko">선행저록</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <owl:inverseOf rdf:resource="http://lod.nl.go.kr/ontology/succeeding"/>
+    <rdfs:comment xml:lang="ko">자원과 직접 관련된 선행 자원이 있는 경우(선후관계), 그 선행 자원에 대한 사항</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfClosed">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">date of closed</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="ko">휴관일</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/reproductionInstitution">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">복제기관을 기술한다. 만약에 동일한 복제물에 대하여 복제기관이 하나 이상일 경우 반복하여 기술할 수 있다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">복제기관</rdfs:label>
+    <rdfs:label xml:lang="en">reproduction institution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/reproductionNote"/>
+    <rdfs:domain rdf:nodeID="A70"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/succeeding">
+    <rdfs:label xml:lang="en">succeeding</rdfs:label>
+    <rdfs:label xml:lang="ko">후속저록</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:comment xml:lang="ko">자원의 후속자료(선후 관계)가 있는 경우 그 후속자료에 대한 정보 .</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_pa">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pa</rdfs:label>
+    <rdfs:label xml:lang="ko">신문</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/VideoDocument">
+    <rdfs:label xml:lang="en">Video document</rdfs:label>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">동영상자료</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:subClassOf rdf:nodeID="A73"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/series">
+    <rdfs:label xml:lang="en">series</rdfs:label>
+    <rdfs:label xml:lang="ko">총서</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/University">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label xml:lang="ko">대학</rdfs:label>
+    <rdfs:label xml:lang="en">University</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfSeries">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">이 필드에는 총서사항과 총서표제의 부출표목이 같은 경우에 총서사항을 기술한다. 이 필드는 총서사항이자 총서부출표목이다. 440 필드가 있는 경우, 이에 대응하는 830 필드는 440 필드와 중복되기 때문에 사용되지 않는다.&#xD;
+&#xD;
+총서사항은 매체 표시(식별기호 ▾h)를 포함하지 않으므로, 총서부출표목에 매체 표시가 필요한 경우, 490 필드가 총서부출표목에 대응하는 8XX 필드와 함께 총서사항에 사용된다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">총서표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of series</rdfs:label>
+    <rdfs:domain rdf:nodeID="A14"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/workingPaper">
+    <rdfs:label xml:lang="ko">조사 보고서</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">working paper</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ElectronicJournal">
+    <rdfs:subClassOf rdf:nodeID="A74"/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:label xml:lang="en">Electronic journal</rdfs:label>
+    <rdfs:label xml:lang="ko">전자저널</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfHostItem">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">기본자료저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of host item</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/isGeographicAreaOf">
+    <rdfs:comment xml:lang="ko">7자리의 지역구분부호로 한국문헌자동화형식(KORMARC)에서 규정한 지역구분부호표를 따름</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:label xml:lang="en">is geographic area of</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Location"/>
+    <rdfs:range rdf:nodeID="A75"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/abbreviatedTitle">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:label xml:lang="ko">축약표제</rdfs:label>
+    <rdfs:label xml:lang="en">abbreviated title</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="ko">색인작성과 식별을 목적으로 축약한 자원의 표제</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/text">
+    <rdfs:label xml:lang="ko">텍스트</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/newsPosition">
+    <rdfs:label xml:lang="ko">기사 위치</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A77">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_s">
+    <rdfs:label xml:lang="ko">휴간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://listinc.kr/id/member/joyhong">
+    <foaf:name xml:lang="en">JoyHong</foaf:name>
+    <foaf:mbox rdf:resource="mailto:joyhong@listinc.kr"/>
+    <foaf:mbox rdf:resource="mailto:joyhong@li-st.com"/>
+    <foaf:name xml:lang="ko">허홍수</foaf:name>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/rank">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">rank</rdfs:label>
+    <rdfs:label xml:lang="ko">등급</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/issnOfSeries">
+    <rdfs:label xml:lang="en">issn of series</rdfs:label>
+    <rdfs:label xml:lang="ko">총서 ISSN</rdfs:label>
+    <rdfs:domain rdf:nodeID="A57"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/sourceOfInformation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">창간호나 종간호를 소장하지 않아 권·연차를 다른 정보원으로부터 채기한 경우 (제1지시기호가 1) 그 정보원을 참조(Cf.)와 함께 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">확인자료명</rdfs:label>
+    <rdfs:label xml:lang="en">source of information</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A79">
+    <rdf:rest rdf:nodeID="A80"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/holdingInstitution">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">자료를 소장하고 있는 기관명에 대한 KORMARC의 부호를 기술한다. 관련 KORMARC 부호는 국립중앙도서관에서 제공하는 "부속서 7. 한국도서관부호표"의 부호를 적용한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">소장기관</rdfs:label>
+    <rdfs:label xml:lang="en">holding institution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A81"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/publicationPlace">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">발행지</rdfs:comment>
+    <rdfs:label xml:lang="ko">발행지</rdfs:label>
+    <rdfs:label xml:lang="en">publication place</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A82"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/locationNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">기술대상 자료의 원본이나 복제본이 타기관에 소장되어 있는 경우, 그 원본이나 복제본의 소장처를 기술한다. 이 필드는 원본이나 복제본이 기술된 자료와 다른 곳에 있을 경우에만 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">원본/복제본 소재 주기</rdfs:label>
+    <rdfs:label xml:lang="en">Location of Originals/Duplicates Note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A83"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/meetingInformation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">meeting information</rdfs:label>
+    <rdfs:label xml:lang="ko">회의 정보</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_e">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</rdfs:label>
+    <rdfs:label xml:lang="ko">격주간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <rdf:rest rdf:nodeID="A78"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:rest rdf:nodeID="A85"/>
+    <rdf:first rdf:resource="http://lod.nl.go.kr/ontology/OfflineMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <rdf:rest rdf:nodeID="A87"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/deathYear">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:label xml:lang="ko">사망연도</rdfs:label>
+    <rdfs:label xml:lang="en">death year</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:comment xml:lang="ko">개인(사람)의 사망연도</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_gm">
+    <rdfs:label xml:lang="ko">일반잡지</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gm</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_jo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jo</rdfs:label>
+    <rdfs:label xml:lang="ko">학술지</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/master">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">masters degree</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">master</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/ThesisDegree"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/isClosed">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">is closed</rdfs:label>
+    <rdfs:label xml:lang="ko">폐관여부</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Library"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/headingOfOriginalLanguage">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾a는 관련 레코드 100(기본표목-개인명) 필드, 110(기본표목-단체명) 필드, 111(기본표목-회의명) 필드의 기본표목 데이터를 포함한다. 하지만 식별기호에서는 1XX 필드에서 사용하는 개별적인 이름의 요소나 통일표제는 기술되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">원저 기본표목</rdfs:label>
+    <rdfs:label xml:lang="en">heading of original language</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_ca">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ca</rdfs:label>
+    <rdfs:label xml:lang="ko">만화</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/itemNumberOfLC">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">청구기호상의 도서기호를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">미국국회도서관 청구기호 도서기호</rdfs:label>
+    <rdfs:label xml:lang="en">item number of LC</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A36"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/itemNumber"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_f">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f</rdfs:label>
+    <rdfs:label xml:lang="ko">반년간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <owl:unionOf rdf:nodeID="A69"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/transcript">
+    <rdfs:label xml:lang="ko">기록물</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcript</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/supplementTo">
+    <rdfs:label xml:lang="en">supplement to</rdfs:label>
+    <rdfs:label xml:lang="ko">모체저록</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <owl:inverseOf rdf:resource="http://lod.nl.go.kr/ontology/hasSupplement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/kdcn">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">kdc</rdfs:label>
+    <rdfs:label xml:lang="ko">한국십진분류기호</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Sound">
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">Sound</rdfs:label>
+    <rdfs:label xml:lang="ko">사운드</rdfs:label>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/restriction">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">자료를 이용하는데 제한이 있는 경우, 그 접근제한에 관한 내용을 기술한다. 출판된 저작의 경우, 이 필드에 배포 제한사항에 대한 정보를 기술한다.&#xD;
+&#xD;
+출판물에 접근하는 것을 제한한다는 의미가 아니라 출판물이 특정 이용자층을 대상으로 만들어졌을 경우, 이는 521(이용대상자 주기) 필드에 기술한다. 자료를 접근한 이후 자료를 이용하거나 복제하는 데 대한 제한 내용은 540(이용과 복제 제한에 관한 주기) 필드에 기술한다.&#xD;
+&#xD;
+계속자료(serial)의 경우에는 모든 호수에 대해 제한이 적용되는 경우 사용한다</rdfs:comment>
+    <rdfs:label xml:lang="ko">이용제한사항</rdfs:label>
+    <rdfs:label xml:lang="en">restriction</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A92"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A93">
+    <rdf:rest rdf:nodeID="A53"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfAdditionalPhysicalForm">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">기타형태저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of additional physical form</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_u">
+    <rdfs:label xml:lang="ko">알수없음</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateSequentialDesignation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="ko">표제변동 권연차표시</rdfs:label>
+    <rdfs:label xml:lang="en">date sequential designation</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:comment xml:lang="ko">자원의 변경 전 표제와 관련된 권ㆍ연차</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A94">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/medium">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">인쇄자료 이외의 각종 형태자료의 자료종별성격을 나타내는 매체 표시를 기술한다. ISBD 원칙에 따라 매체표시는 항상 각괄호([ ])로 묶어 기술한다. 종합표제 대신 개별저작의 표제를 기술할 경우에는 첫 번째 표제 다음에 기재한다. 식별기호 ▾a가 반복될 경우에는 첫 번째 식별기호 ▾a 다음에 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">자료형태</rdfs:label>
+    <rdfs:label xml:lang="en">medium</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Classification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">Classification</rdfs:label>
+    <rdfs:label xml:lang="ko">분류</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Country">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdfs:label xml:lang="ko">국가</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/preferred">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Concept"/>
+    <rdfs:label xml:lang="ko">우선어</rdfs:label>
+    <rdfs:label xml:lang="en">preferred</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/itemNumberOfOtherNumber">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">청구 기호 중 도서기호를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">다른 분류기호 도서기호</rdfs:label>
+    <rdfs:label xml:lang="en">item number of other number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/itemNumber"/>
+    <rdfs:domain rdf:nodeID="A95"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/sourceOfOtherNumber">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾a(분류기호)의 적용 분류표와 판표시를 분류기호 뒤에 기술하되, 분류표는 제1지시기호가 b/(그 외의 분류표)인 경우에만 기술한다. 적용된 분류표의 판이 달라 발생하는 2개 이상의 분류기호의 경우에는 필드를 반복하여 기술하는 것이 바람직하다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">분류기호 정보원</rdfs:label>
+    <rdfs:label xml:lang="en">source of other number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A96"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_g">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g</rdfs:label>
+    <rdfs:label xml:lang="ko">격년간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/productionPlace">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">생산지</rdfs:comment>
+    <rdfs:label xml:lang="en">production place</rdfs:label>
+    <rdfs:label xml:lang="ko">생산지</rdfs:label>
+    <rdfs:domain rdf:nodeID="A97"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A98">
+    <rdf:rest rdf:nodeID="A89"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <owl:unionOf rdf:nodeID="A93"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfContinuousData">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">type of continuous data</rdfs:label>
+    <rdfs:label xml:lang="ko">연속자료유형</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A99">
+    <rdf:rest rdf:nodeID="A91"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/headingOfTranslation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾a는 관련 레코드 100(기본표목-개인명) 필드, 110(기본표목-단체명) 필드, 111(기본표목-회의명) 필드의 기본표목 데이터를 포함한다. 하지만 식별기호에서는 1XX 필드에서 사용하는 개별적인 이름의 요소나 통일표제는 기술되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">번역저 기본표목</rdfs:label>
+    <rdfs:label xml:lang="en">heading of translation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A100">
+    <owl:unionOf rdf:nodeID="A43"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_h">
+    <rdfs:label xml:lang="ko">3년1회간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A72"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/tradeJournal">
+    <rdfs:label xml:lang="ko">무역신문</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trade journal</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/supplementNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">부록주기를 기술한다. 식별기호 ▾a는 이 주기의 전체 내용을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">부록주기</rdfs:label>
+    <rdfs:label xml:lang="en">supplement note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A101"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/itemNumberOfDDC">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">청구기호 중 도서기호를 기술한다. 이 식별기호에는 자료(또는 세트) 기호를 기술할 수도 있다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">듀이십진분류기호 도서기호</rdfs:label>
+    <rdfs:label xml:lang="en">item number of DDC</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A102"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/itemNumber"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/volumeOfNLK">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">volume of NLK</rdfs:label>
+    <rdfs:comment xml:lang="ko">국립중앙도서관 청구기호상의 권·연차기호를 기술한다. 권·연차가 연속된 경우에는 처음 권·연차와 마지막 권·연차를 붙임표( - )로 연결한다. 단, 현재 계속 간행중인 경우에는 처음 권·연차 뒤에 붙임표( - )까지만 입력한다</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/volume"/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label xml:lang="ko">국립중앙도서관 청구기호 권연차기호</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/relatedParts">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">상위총서 관계표시</rdfs:label>
+    <rdfs:label xml:lang="en">related parts</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ElectronicDocument">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label xml:lang="en">Electronic document</rdfs:label>
+    <rdfs:label xml:lang="ko">전자자료</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <owl:unionOf rdf:nodeID="A66"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A103">
+    <owl:unionOf rdf:nodeID="A19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A104">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A105">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:rest rdf:nodeID="A106"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A107">
+    <rdf:rest rdf:nodeID="A31"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:rest rdf:nodeID="A59"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A108">
+    <rdf:rest rdf:nodeID="A33"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/uci">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">Universal Content Identifier</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">한국형 URN 식별 체계</rdfs:comment>
+    <rdfs:label xml:lang="ko">국가디지털콘텐츠식별체계</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A109">
+    <owl:unionOf rdf:nodeID="A84"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfPreceding">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">선행저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of preceding</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <owl:unionOf rdf:nodeID="A110"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A111">
+    <rdf:rest rdf:nodeID="A88"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfOtherEdition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">이판저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of other edition</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A112">
+    <rdf:rest rdf:nodeID="A113"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/modificationDate">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">수정 날짜</rdfs:label>
+    <rdfs:label xml:lang="en">modification date</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfFormerPublicationFrequency">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:label xml:lang="ko">이전 간행빈도 시행 연월</rdfs:label>
+    <rdfs:label xml:lang="en">date of former publication frequency</rdfs:label>
+    <rdfs:comment xml:lang="ko">자원의 이전 간행빈도 연월</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/awardedFrom">
+    <rdfs:comment xml:lang="ko">학위수여대학과 대학원</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+    <rdfs:label xml:lang="en">awarded from</rdfs:label>
+    <rdfs:label xml:lang="ko">학위수여 기관</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/OfflineMaterial">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">Offline material</rdfs:label>
+    <rdfs:label xml:lang="ko">오프라인 자료</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/awardsNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A114"/>
+    <rdfs:label xml:lang="ko">수상 주기</rdfs:label>
+    <rdfs:label xml:lang="en">awards note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원의 수상내역</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A115">
+    <owl:unionOf rdf:nodeID="A54"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:rest rdf:nodeID="A71"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/create">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">저작하다</rdfs:label>
+    <rdfs:label xml:lang="en">create</rdfs:label>
+    <rdfs:range rdf:nodeID="A116"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A114">
+    <owl:unionOf rdf:nodeID="A98"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_ma">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ma</rdfs:label>
+    <rdfs:label xml:lang="ko">잡지</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A117">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/inputedBy">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">inputed by</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/managedBy"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationFrequencyType">
+    <rdfs:comment xml:lang="ko">연속간행물에서 사용하는 간행빈도 구분 부가정보</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/Classification"/>
+    <rdfs:label xml:lang="en">Publication frequency type</rdfs:label>
+    <rdfs:label xml:lang="ko">간행빈도구분</rdfs:label>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_dp">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dp</rdfs:label>
+    <rdfs:label xml:lang="ko">박사학위논문</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <owl:unionOf rdf:nodeID="A107"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfEstablishment">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label xml:lang="ko">설립일</rdfs:label>
+    <rdfs:label xml:lang="en">date of establishment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_s">
+    <rdfs:label xml:lang="ko">반월간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Concept">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/DataType">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/Classification"/>
+    <rdfs:label xml:lang="en">Data type</rdfs:label>
+    <rdfs:label xml:lang="ko">자료구분</rdfs:label>
+    <rdfs:comment xml:lang="ko">공통 대상에서 사용하는 자료 구분 부가정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/manufacturer">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">제작처</rdfs:comment>
+    <rdfs:label xml:lang="en">manufacturer</rdfs:label>
+    <rdfs:label xml:lang="ko">제작처</rdfs:label>
+    <rdfs:domain rdf:nodeID="A118"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/keyTitle">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">등록표제는 022(ISSN) 필드에 기록된 국제표준연속간행물번호(ISSN)와 관련되어 연속간행물에 부여되는 표제이다. 이 표제는 한 편의 연속간행물에서 그대로 옮겨온 표제정보로 작성되거나, 필요한 경우 유일성을 갖도록 하는 한정어로 구성된다. 등록표제는 국가센터에 의해 부여된 데이터요소이며 ISSN 네트워크에 연결된 국가센터에서 부여한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">등록표제</rdfs:label>
+    <rdfs:label xml:lang="en">key title</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/uniformTitle">
+    <rdfs:label xml:lang="ko">통일표제</rdfs:label>
+    <rdfs:label xml:lang="en">uniform title</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A119">
+    <rdf:rest rdf:nodeID="A120"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/NonBook">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/OfflineMaterial"/>
+    <rdfs:label xml:lang="en">Non book</rdfs:label>
+    <rdfs:label xml:lang="ko">비도서</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A121">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A122">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/birthYear">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">생년</rdfs:comment>
+    <rdfs:label xml:lang="ko">출생연도</rdfs:label>
+    <rdfs:label xml:lang="en">birth year</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_dm">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dm</rdfs:label>
+    <rdfs:label xml:lang="ko">석사학위논문</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/holdingItemNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">해당기관 소장본의 낙장(落張), 배접(褙接), 보사(補寫), 인문(印文), 장서기(藏書記), 지어(識語), 묵서(墨書)나 열람용 복제본 여부, 소장 원본·복제본의 청구기호 등 소장본 관련 로컬정보를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">소장본 주기</rdfs:label>
+    <rdfs:label xml:lang="en">holding item note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A100"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A123">
+    <rdf:rest rdf:nodeID="A105"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/classificationNumberOfNLK">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A90"/>
+    <rdfs:label xml:lang="ko">국립중앙도서관 청구기호 분류기호</rdfs:label>
+    <rdfs:label xml:lang="en">National Library of Korea Call Number - Classification Number</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/classificationNumber"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원에 부여된 국립중앙도서관 청구기호 상의 분류기호</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <owl:unionOf rdf:nodeID="A7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A106">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfMainSeries">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">상위총서표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of main series</rdfs:label>
+    <rdfs:domain rdf:nodeID="A124"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_t">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t</rdfs:label>
+    <rdfs:label xml:lang="ko">연3회간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_bm">
+    <rdfs:label xml:lang="ko">점자잡지</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bm</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A121"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/newsGenre">
+    <rdfs:label xml:lang="ko">기사 유형</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:nodeID="A122"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A125">
+    <owl:unionOf rdf:nodeID="A112"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A126">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A124">
+    <owl:unionOf rdf:nodeID="A123"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/libraryType">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">library type</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Library"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="ko">관종구분</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A127">
+    <rdf:rest rdf:nodeID="A39"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/itemNumber">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">item number</rdfs:label>
+    <rdfs:label xml:lang="ko">도서기호</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_zz">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zz</rdfs:label>
+    <rdfs:label xml:lang="ko">기타(도자기..)</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_u">
+    <rdfs:label xml:lang="ko">불명</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/OldBook">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label xml:lang="ko">고서</rdfs:label>
+    <rdfs:label xml:lang="en">Old book</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/issuedWith">
+    <rdfs:label xml:lang="en">issued with</rdfs:label>
+    <rdfs:label xml:lang="ko">동시발간저록</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:comment xml:lang="ko">자원과 수평관계((horizontal relationship)에 있는, 해당 자원에 포함하여 발간하거나 함께 발행했지만 별도 목록으로 작성한 자료 정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_m">
+    <rdfs:label xml:lang="ko">월간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A128">
+    <owl:unionOf rdf:nodeID="A111"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/datePublished">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">트리플 발행 일시</rdfs:label>
+    <rdfs:label xml:lang="en">date published</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A116">
+    <owl:unionOf rdf:nodeID="A127"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_sm">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sm</rdfs:label>
+    <rdfs:label xml:lang="ko">학술지</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/reproductionNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">해당자료가 영인, 복사, 마이크로형태 등에 의한 복제물이고 그 원본을 중심으로 서지정보를 기술한 경우, 복제에 관한 사항을 기술한다.&#xD;
+&#xD;
+이 필드에는 원본이 복제된 사항을 기술한다. 서지 레코드를 원본을 중심으로 기술하고 복제와 관련된 정보는 533 필드에 주기로 기술한다. 목록작성기관에서 기술부에 원본을 반영할 것을 선택한 경우, 복제본에 관한 정보를 반영하는 데 사용된다.&#xD;
+&#xD;
+복합 자료의 경우, 기관에서 복제물만을 소장할 때, 이 필드에는 복제된 기록물 단위로 기술하고 기술부는 관례에 따라 원본을 기준으로 작성한다. 이 필드는 보통 원본을 소장하고 있는 기관을 나타내는 535(원본/복제본 소재주기) 필드와 관련하여 사용한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">복제주기</rdfs:label>
+    <rdfs:label xml:lang="en">reproduction note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A129"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/relatedPlace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related place</skos:prefLabel>
+    <rdfs:label xml:lang="ko">관련 장소</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <owl:unionOf rdf:nodeID="A130"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/originalVersionNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">해당자료가 영인, 복사, 마이크로형태 등에 의한 복제물이고 복제본을 중심으로 서지정보를 기술한 경우, 그 원본에 관한 사항을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">원본주기</rdfs:label>
+    <rdfs:label xml:lang="en">original version note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/containedIn">
+    <rdfs:label xml:lang="en">contained in</rdfs:label>
+    <rdfs:label xml:lang="ko">수록되다</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/conferenceProceeding">
+    <rdfs:label xml:lang="ko">컨퍼런스 프로시딩</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conference proceeding</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/numberMark">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">숫자부호</rdfs:label>
+    <rdfs:label xml:lang="en">number mark</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/producer">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">생산처</rdfs:comment>
+    <rdfs:label xml:lang="en">producer</rdfs:label>
+    <rdfs:label xml:lang="ko">생산처</rdfs:label>
+    <rdfs:domain rdf:nodeID="A131"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <owl:unionOf rdf:nodeID="A132"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A133">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/physicalFormAvailableNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">이용가능한 다른 형태자료에 대하여 기술한다. 또한 다른 식별기호에 해당하지 않는 설명도 포함한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">이용가능한 다른 형태자료 주기</rdfs:label>
+    <rdfs:label xml:lang="en">physical form available note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A134"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A135">
+    <rdf:rest rdf:nodeID="A126"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/book">
+    <rdfs:label xml:lang="ko">일반도서</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">book</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/mainSeries">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:label xml:lang="en">main series</rdfs:label>
+    <rdfs:label xml:lang="ko">상위총서</rdfs:label>
+    <owl:inverseOf rdf:resource="http://lod.nl.go.kr/ontology/subSeries"/>
+    <rdfs:comment xml:lang="ko">자원이 하위총서(수직적 관계)일 때, 상위총서저록에 관한 정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/volumeOfSeries">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">총서에 주어진 권차 또는 차례를 나타내는 명칭을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="en">volume of series</rdfs:label>
+    <rdfs:label xml:lang="ko">총서번호</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/issuingBodyNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">발행처주기에 관한 사항을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">발행처주기</rdfs:label>
+    <rdfs:label xml:lang="en">issuing body note</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfManufacture">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A136"/>
+    <rdfs:label xml:lang="en">date of manufacture</rdfs:label>
+    <rdfs:label xml:lang="ko">제작년</rdfs:label>
+    <rdfs:comment xml:lang="ko">자원의 제작연도 혹은 인쇄연도</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <owl:unionOf rdf:nodeID="A135"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ddcn">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">듀이십진분류기호</rdfs:label>
+    <rdfs:label xml:lang="en">ddc</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A137">
+    <rdf:rest rdf:nodeID="A138"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/exhibition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">exhibition</rdfs:label>
+    <rdfs:label xml:lang="ko">전시</rdfs:label>
+    <rdfs:comment xml:lang="ko">자원이 전시를 토대로 하여 만들어진 경우, 그 전시에 관한 내용</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/winterOpenTime">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">winter open time</rdfs:label>
+    <rdfs:label xml:lang="ko">동절기 개관시간</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Library"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/citationReferenceNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A139"/>
+    <rdfs:label xml:lang="ko">인용 참고 주기</rdfs:label>
+    <rdfs:label xml:lang="en">citation reference note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원의 서평과 발행한 서지 기술 관련 인용사항, 참고문헌 주기. 출처(인용)을 포함</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/bibliography">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A27"/>
+    <rdfs:label xml:lang="ko">서지 등 주기</rdfs:label>
+    <rdfs:label xml:lang="en">bibliography</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원에 수록된 참고자료나 인용자료에 관련된 정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/projection">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">전체 도법표시를 기술한다. ISBD의 원칙에 따라 ▾b는 쌍반점(;)을 앞세워 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">도법</rdfs:label>
+    <rdfs:label xml:lang="en">projection</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Librarian">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="ko">사서</rdfs:label>
+    <rdfs:label xml:lang="en">librarian</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/editionOfDDC">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A109"/>
+    <rdfs:label xml:lang="ko">듀이십진분류기호 판표시</rdfs:label>
+    <rdfs:label xml:lang="en">edition of DDC</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원의 분류에 적용한 DDC분류표 판을 기술한 것</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfSucceeding">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">후속저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of succeeding</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/formerTitle">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">권차 또는 권차명 표시를 제외한 본표제, 별표제 또는 관제를 포함하는 본표제를 기술한다. 본표제가 반복되는 경우에는 식별기호(▾a)를 반복한다. 두 번째 이하의 식별기호(▾a)는 245 필드에서 직접 부출 되지 않고 740 필드에 자동생성을 위한 용도로 사용된다. 또한 이 식별기호에는 종합 표제가 없는 집서의 경우, 독립된 저작의 첫 번째 표제(동일하거나 다른 저자/작곡가)를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">변경전 표제</rdfs:label>
+    <rdfs:label xml:lang="en">former title</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateOfPublicationSequentialDesignation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="ko">권,연차 또는 발행년 표시</rdfs:label>
+    <rdfs:label xml:lang="en">date of publication sequential designation</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:comment xml:lang="ko">자원의 창간 및 종간연도 또는 권호 표시. 연도 정보가 해당 자원 외 다른 정보원에서 채기된 경우 그에 대한 참조 포함</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A102">
+    <owl:unionOf rdf:nodeID="A137"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://listinc.kr/id/listinc">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <foaf:member rdf:resource="http://listinc.kr/id/member/joyhong"/>
+    <foaf:mbox rdf:resource="mailto:hello@listinc.kr"/>
+    <foaf:homepage rdf:resource="http://li-st.com/"/>
+    <foaf:homepage rdf:resource="http://listinc.kr/"/>
+    <foaf:name xml:lang="en">LiST Inc.</foaf:name>
+    <foaf:member rdf:resource="http://listinc.kr/id/member/wonseok.oh"/>
+    <foaf:mbox rdf:resource="mailto:hello@li-st.com"/>
+    <foaf:name xml:lang="ko">주식회사 리스트</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:nodeID="A133"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_hr">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hr</rdfs:label>
+    <rdfs:label xml:lang="ko">학습서</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A92">
+    <owl:unionOf rdf:nodeID="A140"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/uniformTitleOfSeries">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">이 필드는 총서의 부출표목이 서명일 경우를 나타낸다. 830 필드는 보통 총서와 관련된 필드 490 필드의 총서사항이나 500 필드의 일반주기로 판단될 수 있다. 복제물의 경우 533(복제주기) 필드의 ▾f(복제 총서사항)에 기술된 것을 근거로 기술할 수 있다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">통일표제</rdfs:label>
+    <rdfs:label xml:lang="en">uniform title of series</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_q">
+    <rdfs:label xml:lang="ko">계간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">q</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/translatedAs">
+    <rdfs:label xml:lang="en">translated as</rdfs:label>
+    <rdfs:label xml:lang="ko">번역저록</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/translationOf"/>
+    <rdfs:comment xml:lang="ko">원저(수평적 관계)인 자원의 다른 언어로 번역된 번역본에 관한 정보</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/kdc">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">KDC 분류기호를 기술한다. 복수주제를 다룬 자료로서 분류기호가 2개 이상 부여되는 경우에는 식별기호 ▾a를 반복하여 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">한국십진분류기호</rdfs:label>
+    <rdfs:label xml:lang="en">Korean Decimal Classification Number</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A141">
+    <rdf:rest rdf:nodeID="A76"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A142">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_irregular">
+    <rdfs:label xml:lang="ko">적용안함</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> </rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <owl:unionOf rdf:nodeID="A143"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A144">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/dateLinked">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">date linked</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    <rdfs:label xml:lang="ko">링크 생성 일시</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A145">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/summerOpenTime">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">summer open time</rdfs:label>
+    <rdfs:label xml:lang="ko">하절기 개관시간</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/Library"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A146">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_z">
+    <rdfs:label xml:lang="ko">기타</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/distributionPlace">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label xml:lang="en">distribution place</rdfs:label>
+    <rdfs:label xml:lang="ko">배포지</rdfs:label>
+    <rdfs:domain rdf:nodeID="A125"/>
+    <rdfs:comment xml:lang="ko">자원의 배포지</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A147">
+    <rdf:rest rdf:nodeID="A146"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A101">
+    <owl:unionOf rdf:nodeID="A141"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A148">
+    <rdf:rest rdf:nodeID="A144"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A149">
+    <rdf:rest rdf:nodeID="A142"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A118">
+    <owl:unionOf rdf:nodeID="A149"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/subtitle">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">부제목</rdfs:label>
+    <rdfs:label xml:lang="en">subtitle</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfResource">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">type of resource</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+    <rdfs:label xml:lang="ko">콘텐츠유형</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/remainderOfTitle">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">서지레코드의 표제와 책임표시사항을 기술한다. 이 필드는 본표제를 구성하며 또한 자료유형표시, 표제의 나머지 부분, 기타 표제 관련 정보, 표제지 상의 나머지 부분 전기(轉記)/책임표시로 구성된다. 표제에는 별표제, 편차/권차, 권제/편제가 포함된다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">표제 관련정보</rdfs:label>
+    <rdfs:label xml:lang="en">remainder of title</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/formerTitleComplexityNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">변경전 표제 설명주기에 관한 사항을 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">변경전 표제 설명주기</rdfs:label>
+    <rdfs:label xml:lang="en">former title complexity note</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationStatusType">
+    <rdfs:label xml:lang="ko">간행상태구분</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/Classification"/>
+    <rdfs:label xml:lang="en">Publication status type</rdfs:label>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:comment xml:lang="ko">연속간행물에서 사용하는 간행상태 구분 부가정보(008태그 6자리)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/numberingPeculiaritiesNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾a는 특수하거나 예외적인 권차를 기술한다. 식별기호 ▾a 아래 기술하는 특수하거나 예외적인 권차의 유형들은 다음과 같다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">특수한 권차표시주기</rdfs:label>
+    <rdfs:label xml:lang="en">numbering peculiarities note</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <vann:preferredNamespaceUri>http://lod.nl.go.kr/ontology/</vann:preferredNamespaceUri>
+    <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
+    <vann:preferredNamespacePrefix>nlon</vann:preferredNamespacePrefix>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Library of Korea</dc:creator>
+    <owl:imports rdf:resource="http://purl.org/goodrelations/v1"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-02</dct:modified>
+    <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
+    <dct:contributor rdf:resource="http://lod.nl.go.kr/library/011001"/>
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-09-17</dct:issued>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Library of Korea / Bibliographic Control Division, 국립중앙도서관 국가서지과</dc:contributor>
+    <owl:imports rdf:resource="http://www.w3.org/ns/org"/>
+    <owl:imports rdf:resource="http://schema.rdfs.org/all.rdf"/>
+    <owl:imports rdf:resource="http://purl.org/NET/c4dm/event.owl"/>
+    <owl:imports rdf:resource="http://purl.org/dc/dcam/"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">이 명세서는 국립중앙도서관이 관리 및 서비스하고 있는 서지, 주제, 이름 데이터를 W3C의 RDF, OWL 기술을 활용하여 구성한 온톨로지의 상세 용어집입니다.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dct:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Library of Korea Ontology</dct:title>
+    <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2019 National Library of Korea. Some rights reserved.</dc:rights>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Library of Korea / Digital Library Planning Division, 국립중앙도서관 디지털기획과 / nlklod@korea.kr</dc:contributor>
+    <dct:publisher rdf:resource="http://lod.nl.go.kr/library/011001"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LiST Inc., 주식회사 리스트 / codalida@gmail.com</dc:contributor>
+    <dct:contributor rdf:resource="http://listinc.kr/id/listinc"/>
+    <owl:imports rdf:resource="http://purl.org/dc/dcmitype/"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NLK_2019_0902</owl:versionInfo>
+    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">이 자료는 국립중앙도서관이 관리, 보존하고 있는 서지, 주제, 이름 데이터를 대상으로 기존의 (KOR)MARC 혹은 DBMS 형태 데이터를 RDF 형식으로 변환하여 웹에 Linked Open Data 형식으로 발행하고 있는 국립중앙도서관 LOD명세서 입니다. </dct:description>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This specification describes National Library of Korea Ontology vocaburaries using W3C's RDF and OWL technology</rdfs:comment>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfSupplement">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">보유판 및 특별호저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of supplement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A129">
+    <owl:unionOf rdf:nodeID="A147"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A150">
+    <owl:unionOf rdf:nodeID="A67"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_d">
+    <rdfs:label xml:lang="ko">폐간</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A97">
+    <owl:unionOf rdf:nodeID="A86"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/authenticationCode">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">검증부호</rdfs:label>
+    <rdfs:label xml:lang="en">authentication code</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A134">
+    <owl:unionOf rdf:nodeID="A151"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/useAndReproductionNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">이용과 복제에 관한 사항을 기술한다. 이 사항은 법적인 효력을 가지고 있거나 공식적인 제한규정을 의미하는 것이다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">이용과 복제 제한에 관한 주기</rdfs:label>
+    <rdfs:label xml:lang="en">use and reproduction note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:nodeID="A56"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/Event">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/fax">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">fax</rdfs:label>
+    <rdfs:label xml:lang="ko">팩스번호</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_rp">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rp</rdfs:label>
+    <rdfs:label xml:lang="ko">보고서</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/itermNumberOfKDC">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">청구기호 중 도서기호를 기술한다. 이 식별기호에는 자료(또는 세트) 기호를 기술할 수도 있다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">한국십진분류기호 도서기호</rdfs:label>
+    <rdfs:label xml:lang="en">iterm number of KDC</rdfs:label>
+    <rdfs:domain rdf:nodeID="A58"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/itemNumber"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/AlternativeMaterial">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">장애인대체자료</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label xml:lang="en">Alternative material</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_li">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">li</rdfs:label>
+    <rdfs:label xml:lang="ko">문헌정보학</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/confirmDate">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">확인 날짜</rdfs:label>
+    <rdfs:label xml:lang="en">confirm date</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/cip">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label xml:lang="ko">출판시도서목록 제어번호</rdfs:label>
+    <rdfs:label xml:lang="en">CIP system control number</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:comment xml:lang="ko">자원의 제어번호. 자료구분 3자리, 연도 4자리, 일련번호 6자리로 구성함.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ddc">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">듀이십진분류기호를 기술한다. 동일자료에 둘 이상의 분류기호가 부여된 경우에는 청구기호를 구성하는 식별기호(첫번째 ▾a 및 ▾b) 뒤에 ▾a를 반복하여 두 번째 이하 분류기호를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">듀이십진분류기호</rdfs:label>
+    <rdfs:label xml:lang="en">Dewey Decimal Classification Number</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A152">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A153">
+    <rdf:rest rdf:nodeID="A145"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/strn">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">해당자료의 표준기술보고서번호를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">표준기술보고서번호</rdfs:label>
+    <rdfs:label xml:lang="en">Standard Technical Report Number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_c">
+    <rdfs:label xml:lang="ko">간행중</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/relationshipInformation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">관계 정보</rdfs:label>
+    <rdfs:label xml:lang="en">relationship information</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A131">
+    <owl:unionOf rdf:nodeID="A154"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A155">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Archives">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label xml:lang="en">Archives</rdfs:label>
+    <rdfs:label xml:lang="ko">해외수집기록물</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/managedBy">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">managed by</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/editionOfKDC">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A50"/>
+    <rdfs:label xml:lang="ko">한국십진분류기호 판표시</rdfs:label>
+    <rdfs:label xml:lang="en">edition of KDC</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원의 분류에 적용한 KDC분류표의 판을 기술한 것</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/currentPublicationFrequency">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">current publication frequency</rdfs:label>
+    <rdfs:label xml:lang="ko">현재 간행빈도</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:comment xml:lang="ko">자원의 간행 빈도</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/department">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label xml:lang="ko">학과, 전공</rdfs:label>
+    <rdfs:label xml:lang="en">department</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+    <rdfs:comment xml:lang="ko">논문에 표시된 학과 혹은 전공</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/magazine">
+    <rdfs:label xml:lang="ko">매거진</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magazine</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A154">
+    <rdf:rest rdf:nodeID="A155"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/ElectronicBook">
+    <rdfs:subClassOf rdf:nodeID="A156"/>
+    <rdfs:subClassOf rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">Electronic book</rdfs:label>
+    <rdfs:label xml:lang="ko">전자책</rdfs:label>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A140">
+    <rdf:rest rdf:nodeID="A152"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A120">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A157">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/formerPublicationFrequency">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">이전 간행빈도를 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">이전 간행빈도</rdfs:label>
+    <rdfs:label xml:lang="en">former publication frequency</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/mainEntryHeading">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾a는 관련 레코드 100(기본표목-개인명) 필드, 110(기본표목-단체명) 필드, 111(기본표목-회의명) 필드의 기본표목 데이터를 포함한다. 하지만 식별기호에서는 1XX 필드에서 사용하는 개별적인 이름의 요소나 통일표제는 기술되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">상위총서 기본표목</rdfs:label>
+    <rdfs:label xml:lang="en">main entry heading</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A158">
+    <owl:unionOf rdf:nodeID="A41"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/software">
+    <rdfs:label xml:lang="ko">소프트웨어</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A139">
+    <owl:unionOf rdf:nodeID="A153"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/relatedOrganization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">관련 단체</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/Concept"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related organization</skos:prefLabel>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/Author"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/audienceNote">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:nodeID="A115"/>
+    <rdfs:label xml:lang="ko">이용대상자 주기</rdfs:label>
+    <rdfs:label xml:lang="en">audience note</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="ko">자원이 특수한 이용자층을 고려하여 간행된 경우, 그 이용대상자의 정보. 구체적으로 이용대상자의 수준, 접근제한 정보, 관심수준 등을 포함</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfData">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">type of data</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+    <rdfs:domain rdf:nodeID="A158"/>
+    <rdfs:label xml:lang="ko">자료유형</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/reports">
+    <rdfs:label xml:lang="ko">보고서</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reports</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A151">
+    <rdf:rest rdf:nodeID="A157"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A159">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A113">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/newspaper">
+    <rdfs:label xml:lang="ko">신문</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">newspaper</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/antecedentSource">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">원시자료의 정보원</rdfs:label>
+    <rdfs:label xml:lang="en">antecedent source</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/modifiedBy">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">modified by</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/managedBy"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:unionOf rdf:nodeID="A148"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/standards">
+    <rdfs:label xml:lang="ko">표준</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standards</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/companyReport">
+    <rdfs:label xml:lang="ko">회사보고서</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">company report</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <owl:unionOf rdf:nodeID="A108"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfIssuedWith">
+    <rdfs:label xml:lang="en">title of issued with</rdfs:label>
+    <rdfs:label xml:lang="ko">동시발간저록 표제</rdfs:label>
+    <rdfs:domain rdf:nodeID="A160"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/marketResearchReport">
+    <rdfs:label xml:lang="ko">시장 조사 보고서</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">market research report</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/distributor">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">distributor</rdfs:label>
+    <rdfs:label xml:lang="ko">배포처</rdfs:label>
+    <rdfs:domain rdf:nodeID="A103"/>
+    <rdfs:comment xml:lang="ko">자원의 배포처</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_w">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w</rdfs:label>
+    <rdfs:label xml:lang="ko">주간</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Collection">
+    <rdfs:label xml:lang="en">Collection</rdfs:label>
+    <rdfs:label xml:lang="ko">컬렉션</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="A29"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/otherResource">
+    <rdfs:label xml:lang="ko">기타</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other resource</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/titleOfTranslation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">식별기호 ▾t는 관련 레코드의 245(표제와 책임표시사항) 필드 또는 130(기본표목-통일표제) 필드의 식별기호 ▾a, ▾f, ▾g, ▾k, ▾n, ▾p로부터 표제정보를 기술한다. 표제의 개별적인 구성요소들은 별도의 식별기호로 부호화되지 않는다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">번역저록 표제</rdfs:label>
+    <rdfs:label xml:lang="en">title of translation</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A161">
+    <rdf:rest rdf:nodeID="A117"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Score">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label xml:lang="en">Score</rdfs:label>
+    <rdfs:label xml:lang="ko">악보</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A132">
+    <rdf:rest rdf:nodeID="A64"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/reproductionPlace">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">복제물이 만들어진 장소의 명칭을 기술한다. 복제장소가 한 곳 이상일 때에는 반복하여 기술할 수 있다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">복제장소</rdfs:label>
+    <rdfs:label xml:lang="en">reproduction place</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://lod.nl.go.kr/ontology/reproductionNote"/>
+    <rdfs:domain rdf:nodeID="A2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/newsTopic">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="ko">기사 주제</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A136">
+    <owl:unionOf rdf:nodeID="A99"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A156">
+    <owl:unionOf rdf:nodeID="A79"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/classificationNumber">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="ko">분류기호</rdfs:label>
+    <rdfs:label xml:lang="en">classification number</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A143">
+    <rdf:rest rdf:nodeID="A159"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A96">
+    <owl:unionOf rdf:nodeID="A161"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/cdt_pm">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pm</rdfs:label>
+    <rdfs:label xml:lang="ko">공잡지</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ContinuousDataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/ThesisDegree">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfPublicationFrequency">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label xml:lang="en">type of publication frequency</rdfs:label>
+    <rdfs:label xml:lang="ko">간행빈도유형</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A162">
+    <rdf:rest rdf:nodeID="A40"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/Location">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">지역@ko</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A110">
+    <rdf:rest rdf:nodeID="A77"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A95">
+    <owl:unionOf rdf:nodeID="A162"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:rest rdf:nodeID="A104"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/relatedEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">관련 사건</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/Concept"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related event</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A130">
+    <rdf:rest rdf:nodeID="A94"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/library/011001">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <foaf:name xml:lang="ko">국립중앙도서관</foaf:name>
+    <foaf:name xml:lang="en">National Library of Korea</foaf:name>
+    <foaf:member rdf:nodeID="A163"/>
+    <foaf:homepage rdf:resource="http://www.nl.go.kr/"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/gpo">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">GPO자료번호를 기술한다. 마이크로필름인 경우에는 GPO자료번호 뒤에 "MF"를 원괄호로 묶어 기술한다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">미국정부간행물번호</rdfs:label>
+    <rdfs:label xml:lang="en">gpo</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A128"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/localHolding">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">이 필드는 각 로컬도서관에서 도서관부호와 소장자료의 등록번호, 권·연차기호, 복본기호, 별치기호 등을 기술한다.&#xD;
+&#xD;
+도서관에 따라 소장사항은 049 필드나 090 필드가 아닌 다른 로컬필드(092, 093 필드 등) 또는 소장 MARC의 필드(852 필드 등)를 사용할 수 있다. KORMARC에서 표시기호에 사용된 숫자 "9"는 대체로 로컬 도서관에서 사용하여 내용을 기술하였음을 의미한다. 049 필드는 MARC21이나 다른 나라의 MARC와는 다른 형식이다.</rdfs:comment>
+    <rdfs:label xml:lang="ko">소장사항</rdfs:label>
+    <rdfs:label xml:lang="en">local holding</rdfs:label>
+    <rdfs:domain rdf:nodeID="A60"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/dt_cp">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cp</rdfs:label>
+    <rdfs:label xml:lang="ko">회의자료</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/DataType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A138">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/video">
+    <rdfs:label xml:lang="ko">동영상 자료</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video</rdfs:label>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A160">
+    <owl:unionOf rdf:nodeID="A119"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.nl.go.kr/ontology/manufacturingPlace">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="ko">제작지</rdfs:comment>
+    <rdfs:label xml:lang="en">manufacturing place</rdfs:label>
+    <rdfs:label xml:lang="ko">제작지</rdfs:label>
+    <rdfs:domain rdf:nodeID="A150"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

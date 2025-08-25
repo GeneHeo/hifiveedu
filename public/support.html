@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title><span class="lang-ko">고객센터</span><span class="lang-en" style="display:none;">Customer Center</span> / Customer Center</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    h1 { text-align: center; }
+    .board {
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .search-bar {
+      margin-bottom: 1em;
+      text-align: right;
+    }
+    input[type="search"] {
+      width: 300px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    th { background-color: #f1f1f1; }
+    td.title { text-align: left; }
+    td.notice { color: red; font-weight: bold; }
+  </style></head>
+<body>
+  <nav class="navbar glass">
+    <div class="navbar-left">
+      <a href="index.html"><img alt="Logo" class="logo-img" src="logo.jpg"/></a>
+    </div>
+    <div class="navbar-menu">
+      <a href="services.html" id="menu-purchase">Purchase</a>
+      <a href="student_manage.html" id="menu-student-manage">Student Manage</a>
+      <a href="support.html" id="menu-support">Support</a>
+      <a href="consulting.html" id="menu-consulting">Consulting</a>
+      <a href="admissions.html" id="menu-admission">Admission</a>
+      <select id="lang-toggle">
+        <option value="en">EN</option>
+        <option value="ko">KR</option>
+      </select>
+    </div>
+  </nav>
+<h1><span class="lang-ko"><span class="lang-ko">고객센터</span><span class="lang-en" style="display:none;">Customer Center</span></span><span class="lang-en" style="display:none;">Customer Center</span></h1>
+<div class="board">
+<div class="search-bar">
+<input placeholder="검색어를 입력하세요..." type="search"/>
+</div>
+<table>
+<thead>
+<tr><th>번호</th><th>분류</th><th>제목</th><th>작성일</th><th>조회수</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td class="notice">공지</td><td class="title">2025년도 수시 지원 안내사항</td><td>2025-04-01</td><td>1033</td></tr>
+<tr><td>2</td><td class="notice">공지</td><td class="title">상담 예약 시스템 업데이트 안내</td><td>2025-03-28</td><td>1081</td></tr>
+<tr><td>3</td><td>일반</td><td class="title">학부모 설명회 일정 공유</td><td>2025-03-20</td><td>1009</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+<script>
+  function toggleLanguage(lang) {
+    document.querySelectorAll('.lang-ko').forEach(el => el.style.display = lang === 'ko' ? 'inline' : 'none');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'inline' : 'none');
+    localStorage.setItem('lang', lang);
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    const savedLang = localStorage.getItem('lang') || 'ko';
+    toggleLanguage(savedLang);
+    const selector = document.getElementById('languageSwitcher');
+    if (selector) selector.value = savedLang;
+  });
+</script>

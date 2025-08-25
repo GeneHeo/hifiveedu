@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>상품 결제 / Purchase Options</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 2em; background: #f4f4f4; }
+    h2 { font-size: 1.8em; margin-bottom: 1em; }
+    .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+    button {
+      padding: 1em;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .kakao { background: #FEE500; color: #3C1E1E; font-weight: bold; }
+    .naver { background: #1EC800; color: white; font-weight: bold; }
+    .card { background: #004aad; color: white; font-weight: bold; }
+  </style></head>
+<body>
+<nav class="navbar glass">
+<div class="navbar-left">
+<a href="index.html"><img alt="Logo" class="logo-img" src="logo.jpg"/></a>
+</div>
+<div class="navbar-menu">
+<a href="purchase.html" id="menu-purchase">Purchase</a>
+<a href="services.html" id="menu-student-manage">Student Manage</a>
+<a href="support.html" id="menu-support">Support</a>
+<a href="consulting.html" id="menu-consulting">Consulting</a>
+<a href="admissions.html" id="menu-admission">Admission</a>
+<select id="lang-toggle">
+<option value="en">EN</option>
+<option value="ko">KR</option>
+</select>
+</div>
+</nav>
+
+<div class="payment-options">
+<button class="kakao" onclick="postPayment('kakao')">💛 카카오페이 결제</button>
+<button class="naver" onclick="postPayment('naver')">💚 네이버페이 결제</button>
+<button class="card" onclick="postPayment('card')">💳 신용카드 결제</button>
+</div>
+
+<script>
+function setHeroLang() {
+document.getElementById('hero-title').textContent = currentLang === 'ko' ? '결제 수단 선택' : 'Select a Payment Method';
+document.getElementById('hero-desc').textContent = currentLang === 'ko' ? '원하는 결제 방식을 선택하세요.' : 'Choose your preferred payment option below.';
+}
+function setPlaceholders() {
+document.querySelectorAll('[placeholder="💛 카카오페이 결제"]').forEach(el=>el.placeholder = currentLang==='ko'?'💛 카카오페이 결제':'💛 Pay with KakaoPay');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='💛 카카오페이 결제'||el.textContent.trim()==='💛 Pay with KakaoPay')el.textContent=currentLang==='ko'?'💛 카카오페이 결제':'💛 Pay with KakaoPay';});
+document.querySelectorAll('[placeholder="💚 네이버페이 결제"]').forEach(el=>el.placeholder = currentLang==='ko'?'💚 네이버페이 결제':'💚 Pay with NaverPay');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='💚 네이버페이 결제'||el.textContent.trim()==='💚 Pay with NaverPay')el.textContent=currentLang==='ko'?'💚 네이버페이 결제':'💚 Pay with NaverPay';});
+document.querySelectorAll('[placeholder="💳 신용카드 결제"]').forEach(el=>el.placeholder = currentLang==='ko'?'💳 신용카드 결제':'💳 Pay with Credit Card');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='💳 신용카드 결제'||el.textContent.trim()==='💳 Pay with Credit Card')el.textContent=currentLang==='ko'?'💳 신용카드 결제':'💳 Pay with Credit Card';});
+document.querySelectorAll('[placeholder="결제는 곧 활성화됩니다."]').forEach(el=>el.placeholder = currentLang==='ko'?'결제는 곧 활성화됩니다.':'Payments will be enabled soon.');
+document.querySelectorAll('button, input[type=button], input[type=submit]').forEach(el=>{if(el.textContent.trim()==='결제는 곧 활성화됩니다.'||el.textContent.trim()==='Payments will be enabled soon.')el.textContent=currentLang==='ko'?'결제는 곧 활성화됩니다.':'Payments will be enabled soon.';});
+}
+</script>
+<script src="app.js"></script></body>
+</html>
